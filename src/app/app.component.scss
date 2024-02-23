@@ -1,0 +1,100 @@
+$coralpink: #FF9B85;
+$jasmine: #FFD97D;
+$ligthgreen: #AAF683;
+$emerald: #60D394;
+$bittersweet: #EE6055;
+$teste: #FFD470;
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: $coralpink;
+
+  .card {
+    width: 400px;
+    height: 220px;
+    border-radius: 20px;
+    box-shadow: 20px 20px 0px rgba(0, 0, 0, 0.2);
+    background-color: $jasmine;
+    display: flex;
+    flex-direction: column;
+
+    .card-header {
+      color: black;
+      text-align: center;
+      margin: 20px;
+      height: 25px;
+    }
+
+    #divisor{
+      border: solid 0.1px;
+      color: grey;
+      display: flex;
+      width: 110%;
+      margin-left: -5%;
+    }
+    
+    .card-body {
+      display: flex;
+      font-weight: 600;
+      background-color: $jasmine;
+      margin: 20px;
+
+      label {
+        padding-bottom: 6px;
+      }
+
+      input {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        transition: border-color 0.3s ease;
+        width: -webkit-fill-available;
+
+        &:focus {
+          outline: none;
+          border-color: $ligthgreen;
+        }
+      }
+
+      button {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 6px;
+        margin: 10px 0;
+        background-color: $ligthgreen;
+        color: black;
+        cursor: pointer;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: $ligthgreen;
+        }
+      }
+    }
+  }
+}
+::ng-deep .sucesso .mdc-snackbar__surface{
+  background-color: $emerald !important;
+}
+::ng-deep .sucesso .mdc-snackbar__label{
+  color: black !important;
+}
+
+::ng-deep .sucesso .mdc-button__label{
+  color: black !important
+}
+::ng-deep .erro .mdc-snackbar__surface{
+  background-color: $bittersweet !important;
+}
+::ng-deep .erro .mdc-snackbar__label{
+  color: black !important;
+}
+
+::ng-deep .erro .mdc-button__label{
+  color: black !important
+}
